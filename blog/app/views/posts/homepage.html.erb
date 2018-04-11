@@ -1,0 +1,12 @@
+
+
+<h1>Blog Ruby</h1>
+
+<% @posts.each do |post| %>
+  <h2> <%= post.title %>   </h2>
+  <h3> <%= post.subject %> </h3>
+  <p>  <%= postText post.text %>    </p>
+  <strong>Autor: <%= post.author.name %></strong>
+  <hr>
+<% end %>
+
